@@ -3,21 +3,29 @@
 <title>october 2026</title>
 <meta name="viewport" content="width=1000">
 <style>
-.links {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-	margin-bottom: 15px;
-	}
-	
-a {
-	display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-	}
+	a {
+		display: block;
+	    margin-block-start: 1em;
+	    margin-block-end: 1em;
+	    margin-inline-start: 0px;
+	    margin-inline-end: 0px;
+	    unicode-bidi: isolate;
+		}
+
+	.adaptive-image {
+            image-rendering: pixelated; 
+            image-rendering: crisp-edges;
+            max-width: 100%;
+            height: auto;
+        }
+
+	@media screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+            .adaptive-image {
+                width: 100vw; 
+                height: 100vh; 
+                object-fit: fill; 
+            }
+        }
 </style>
 </head>
 <body>
